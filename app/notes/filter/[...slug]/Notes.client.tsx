@@ -6,7 +6,7 @@ import { fetchNotes } from "@/lib/api";
 import { useEffect, useState } from "react";
 import SearchBox from "@/components/SearchBox/SearchBox";
 import Pagination from "@/components/Pagination/Pagination";
-import Modal from "@/components/Modal/Modul";
+import Modal from "@/components/Modal/Modal";
 import { useDebouncedCallback } from "use-debounce";
 import toast, { Toaster } from "react-hot-toast";
 import NoteForm from "@/components/NoteForm/NoteForm";
