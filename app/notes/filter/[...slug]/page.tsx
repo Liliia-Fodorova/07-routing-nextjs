@@ -12,6 +12,7 @@ interface NotesProps {
 
 export default async function Notes({ params }: NotesProps) {
   const { slug } = await params;
+  
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
     queryKey: ["notes", 1, "", slug[0]],
